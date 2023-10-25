@@ -143,9 +143,7 @@ if (isset($_POST['save_list'])) {
                                 color: #00f2ff;
                             }
 
-                            @media (max-width: 768px) {
-                                
-                            }
+                            @media (max-width: 768px) {}
                         </style>
                     </form>
                     <!-- <div class="thumb">
@@ -192,9 +190,10 @@ if (isset($_POST['save_list'])) {
                             }
 
                             .collapsible {
-                                max-width: 450px;
+
                                 overflow: hidden;
                                 font-weight: 500;
+                                width: 1000px;
                             }
 
                             .collapsible input {
@@ -215,11 +214,12 @@ if (isset($_POST['save_list'])) {
                                 display: block;
                                 margin-bottom: 10px;
                                 cursor: pointer;
-                                padding: 15px;
+                                padding: 20px;
                                 border-radius: 4px;
                                 z-index: 1;
                                 text-align: center;
-                               
+
+
                             }
 
                             .collapsible label:after {
@@ -229,7 +229,7 @@ if (isset($_POST['save_list'])) {
                                 top: 15px;
                                 width: 18px;
                                 height: 18px;
-                               
+
                                 transition: all 0.3s ease;
                             }
 
@@ -267,7 +267,29 @@ if (isset($_POST['save_list'])) {
                                 padding-left: 15px;
                                 padding-right: 15px;
                                 text-align: center;
-                               
+                                font-size: 17px;
+
+                            }
+
+                            @media (max-width: 768px) {
+
+                                .collapsible {
+
+                                    overflow: hidden;
+                                    font-weight: 500;
+                                    width: 380px;
+                                }
+
+                            }
+
+                            @media (max-width: 1024px) {
+
+                                .collapsible {
+
+                                    overflow: hidden;
+                                    font-weight: 500;
+                                    
+                                }
 
                             }
                         </style>
@@ -278,10 +300,11 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head">
-                                <label for="collapsible-head">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head">
                                     <h3 class="title"><?= $fetch_playlist['j1']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi1']; ?></div>
                                 </div>
@@ -291,10 +314,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head2">
-                                <label for="collapsible-head2">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head2">
                                     <h3 class="title"><?= $fetch_playlist['j2']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi2']; ?></div>
                                 </div>
@@ -304,10 +329,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head3">
-                                <label for="collapsible-head3">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head3">
                                     <h3 class="title"><?= $fetch_playlist['j3']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi3']; ?></div>
                                 </div>
@@ -317,10 +344,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head4">
-                                <label for="collapsible-head4">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head4">
                                     <h3 class="title"><?= $fetch_playlist['j4']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi4']; ?></div>
                                 </div>
@@ -330,10 +359,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head5">
-                                <label for="collapsible-head5">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head5">
                                     <h3 class="title"><?= $fetch_playlist['j5']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi5']; ?></div>
                                 </div>
@@ -343,10 +374,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head6">
-                                <label for="collapsible-head6">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head6">
                                     <h3 class="title"><?= $fetch_playlist['j6']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi6']; ?></div>
                                 </div>
@@ -356,10 +389,11 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head7">
-                                <label for="collapsible-head7">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head7">
                                     <h3 class="title"><?= $fetch_playlist['j7']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi7']; ?></div>
                                 </div>
@@ -369,10 +403,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head8">
-                                <label for="collapsible-head8">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head8">
                                     <h3 class="title"><?= $fetch_playlist['j8']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi8']; ?></div>
                                 </div>
@@ -382,10 +418,11 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head9">
-                                <label for="collapsible-head9">Materi </label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head9">
                                     <h3 class="title"><?= $fetch_playlist['j9']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi9']; ?></div>
                                 </div>
@@ -395,10 +432,12 @@ if (isset($_POST['save_list'])) {
                         <div class="wrapper">
                             <div class="collapsible">
                                 <input type="checkbox" id="collapsible-head10">
-                                <label for="collapsible-head10">Materi</label>
-                                <div class="collapsible-text">
-                                    <br>
+                                <label for="collapsible-head10">
                                     <h3 class="title"><?= $fetch_playlist['j10']; ?></h3>
+                                </label>
+                                <div class="collapsible-text">
+
+
                                     <br>
                                     <div class="description"><?= $fetch_playlist['materi10']; ?></div>
                                 </div>
