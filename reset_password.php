@@ -113,11 +113,10 @@ if (isset($_POST['submit'])) {
 <section class="form-container">
    <form action="" method="post" enctype="multipart/form-data" class="login">
       <h3>Reset Password</h3>
-      <p>Email<span>*</span></p>
-      <input type="email" name="email" placeholder="Enter your email" maxlength="50" required class="box">
+      <!-- <p>Email<span>*</span></p>
+      <input type="email" name="email" placeholder="Enter your email" maxlength="50" required class="box"> -->
       <p>Password<span>*</span></p>
       <input type="password" name="pass" placeholder="Enter your new password" maxlength="20" required class="box">
- 
       <input type="submit" name="submit" value="Reset Password" class="btn">
    </form>
 </section>
